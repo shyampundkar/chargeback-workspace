@@ -1,4 +1,26 @@
 [README.md](https://github.com/user-attachments/files/26318767/README.md)
+# Requirements:
+
+Chargebacks
+cb_id, program_id,qty,invoice_date,invoice_number,dea,pharmacy_id
+1, DSH12345,3,10/11/2024,123456789,AB111111,1001
+2, DSH12345,3,15/11/2024,123456789,AB111111,1001
+3, DSH54321,3,10/11/2024,123456787,AB222000,1001
+4, DSH11111,5,25/12/2024,111111111,AB300000,2000
+5, DSH12345,1,21/12/2024,222222222,AB111111,1001
+6, DSH12345,8,19/11/2024,123456789,AB232323,1001
+
+Sales
+sale_id, program_id,qty,invoice_date,invoice_number,dea,pharmacy_id
+1, DSH12345,10,10/11/2024,123456789,AB111111,1001
+2, DSH54321,3,10/11/2024,123456787,AB222000,1001
+3, DSH54321,3,15/11/2024,123456787,AB222000,1001
+4, DSH11111,5,25/12/2024,111111133,AB300000,2000
+5, DSH12345,1,21/12/2024,222222222,AB111111,3020
+
+Load both data sets into the application.
+Perform matches across the data using invoice_date, invoice_number and program_id
+
 # Chargeback Match
 
 Reconciles chargeback records against sales records using `invoice_date`, `invoice_number`, and `program_id` as the composite match key.

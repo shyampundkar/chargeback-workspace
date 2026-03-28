@@ -21,7 +21,7 @@ sale_id, program_id,qty,invoice_date,invoice_number,dea,pharmacy_id
 Load both data sets into the application.
 Perform matches across the data using invoice_date, invoice_number and program_id
 
-# Chargeback Match
+## Chargeback Match
 
 Reconciles chargeback records against sales records using `invoice_date`, `invoice_number`, and `program_id` as the composite match key.
 
